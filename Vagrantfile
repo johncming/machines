@@ -41,7 +41,7 @@ Vagrant.configure("2") do |config|
 
       vms.vm.network :private_network, ip: box[:ip]
 
-      config.ssh.private_key_path = "./private_key"
+      vms.ssh.private_key_path = "./private_key"
     end
   end
 end
