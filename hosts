@@ -1,4 +1,4 @@
-192.168.67.10 ansible_ssh_user=vagrant ansible_ssh_private_key_file=private_key
-192.168.67.11 ansible_ssh_user=vagrant ansible_ssh_private_key_file=private_key
-192.168.67.12 ansible_ssh_user=vagrant ansible_ssh_private_key_file=private_key
-192.168.67.13 ansible_ssh_user=vagrant ansible_ssh_private_key_file=private_key
+192.168.67.10 ansible_ssh_user=vagrant ansible_ssh_private_key_file=insecure_private_key
+192.168.67.11 ansible_ssh_user=vagrant ansible_ssh_private_key_file=insecure_private_key
+192.168.67.12 ansible_ssh_user=vagrant ansible_ssh_private_key_file=insecure_private_key
+192.168.67.13 ansible_ssh_user=vagrant ansible_ssh_private_key_file=insecure_private_key
