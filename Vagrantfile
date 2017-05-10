@@ -36,7 +36,8 @@ Vagrant.configure("2") do |config|
         v.customize ["modifyvm", :id, "--memory", box[:ram]]
       end
 
-      config.landrush.enabled = true
+      vms.vm.hostname = "#{box[:name]}.vagrant.test"
+      vms.landrush.enabled = true
 
       # use domain(landrush) globally.
       vms.ssh.private_key_path = "./insecure_private_key"
