@@ -1,12 +1,16 @@
 Some Machines
 ========
 
-IPS
+List IP
 ------
 
-- 192.168.67.10
-- 192.168.67.11
-- 192.168.67.12
-- 192.168.67.13
+```
+vagrant landrush list
+```
 
-Todo...
+Mac OS X
+------
+
+```
+ping n0.vagrant.test -> pong
+```
