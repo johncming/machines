@@ -1,27 +1,27 @@
 boxes = [
   {
-    :name => "node-0",
+    :name => "n0",
     :box => "ubuntu/xenial64",
     :ip => '192.168.67.10',
     :cpu => "33",
     :ram => "1024"
   },
   {
-    :name => "node-1",
+    :name => "n1",
     :box => "ubuntu/xenial64",
     :ip => '192.168.67.11',
     :cpu => "33",
     :ram => "1024"
   },
   {
-    :name => "node-2",
+    :name => "n2",
     :box => "ubuntu/xenial64",
     :ip => '192.168.67.12',
     :cpu => "33",
     :ram => "1024"
   },
   {
-    :name => "node-3",
+    :name => "n3",
     :box => "ubuntu/xenial64",
     :ip => '192.168.67.13',
     :cpu => "33",
