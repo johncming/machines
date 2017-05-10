@@ -1,28 +1,30 @@
+vm_ram  = "512"
+
 # 4 hosts
 boxes = [
   {
     :name => "n0",
     :box => "ubuntu/xenial64",
     :cpu => "33",
-    :ram => "1024"
+    :ram => vm_ram
   },
   {
     :name => "n1",
     :box => "ubuntu/xenial64",
     :cpu => "33",
-    :ram => "1024"
+    :ram => vm_ram
   },
   {
     :name => "n2",
     :box => "ubuntu/xenial64",
     :cpu => "33",
-    :ram => "1024"
+    :ram => vm_ram
   },
   {
     :name => "n3",
     :box => "ubuntu/xenial64",
     :cpu => "33",
-    :ram => "1024"
+    :ram => vm_ram
   },
 ]
 
