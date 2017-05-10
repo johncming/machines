@@ -1,29 +1,26 @@
+# 4 hosts
 boxes = [
   {
     :name => "n0",
     :box => "ubuntu/xenial64",
-    :ip => '192.168.67.10',
     :cpu => "33",
     :ram => "1024"
   },
   {
     :name => "n1",
     :box => "ubuntu/xenial64",
-    :ip => '192.168.67.11',
     :cpu => "33",
     :ram => "1024"
   },
   {
     :name => "n2",
     :box => "ubuntu/xenial64",
-    :ip => '192.168.67.12',
     :cpu => "33",
     :ram => "1024"
   },
   {
     :name => "n3",
     :box => "ubuntu/xenial64",
-    :ip => '192.168.67.13',
     :cpu => "33",
     :ram => "1024"
   },
@@ -39,11 +36,12 @@ Vagrant.configure("2") do |config|
         v.customize ["modifyvm", :id, "--memory", box[:ram]]
       end
 
-      vms.vm.network :private_network, ip: box[:ip]
+      config.landrush.enabled = true
 
+      # use domain(landrush) globally.
       vms.ssh.private_key_path = "./insecure_private_key"
-
       vms.ssh.insert_key = false
+
     end
   end
 end
