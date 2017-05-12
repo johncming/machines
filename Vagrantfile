@@ -20,12 +20,6 @@ boxes = [
     :cpu => "33",
     :ram => vm_ram
   },
-  {
-    :name => "n3",
-    :box => "ubuntu/xenial64",
-    :cpu => "33",
-    :ram => vm_ram
-  },
 ]
 
 Vagrant.configure("2") do |config|
